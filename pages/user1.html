@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/user.css">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>User</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <div class="intro">
+                    <a href="/index.html">Giới thiệu</a>
+                    <a href="/pages/signin.html">Đăng nhập</a>
+                    <a href="/pages/signup.html">Đăng ký</a>
+                </div>
+                <div class="currency">
+                    <select name="language" id="">
+                        <option value="Vietnamese">Vietnamese</option>
+                        <option value="English">English</option>
+                    </select>
+                    <select name="currency" id="">
+                        <option value="dollard">Dollard</option>
+                        <option value="vnd">VND</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="user-header">
+                    <div class="logo">
+                        <a href="/index.html"><img src="/assets/img/Twitter-logo.svg.png" width="60px" alt=""></a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Tìm sản phẩm">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="header-button">
+                        <a href="/pages/user.html">
+                            <div>
+                                <i class="fa-solid fa-user" style="color: #aab2c0;"></i>
+                            </div>
+                        </a>
+                        <a href="/pages/cart.html">
+                            <div>
+                                <span>1.469.990 đ</span>
+                            </div>
+                            <div>
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-menu">
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Tongquan')" id="defaultOpen">TỔNG QUAN</button>
+            <button class="tablinks" onclick="openCity(event, 'Donhang')">ĐƠN HÀNG</button>
+            <button class="tablinks" onclick="openCity(event, 'Diachi')">ĐỊA CHỈ</button>
+            <button class="tablinks" onclick="openCity(event, 'Thongtin')">THÔNG TIN TÀI KHOẢN</button>
+            <button class="tablinks" onclick="openCity(event, 'Sanpham')">SẢN PHẨM ĐÃ LƯU</button>
+        </div>
+
+        <div id="Tongquan" class="tabcontent">
+            <span>Chưa có dữ liệu</span>
+        </div>
+
+        <div id="Donhang" class="tabcontent">
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <th>Thời gian</th>
+                    <th>Mã đơn hàng</th>
+                    <th>Số tiền</th>
+                    <th>Thanh toán</th>
+                    <th>Giao hàng</th>
+                    <th>Chi tiết</th>
+                </tr>
+                <tr>
+                    <td>
+                        <span>1</span>
+                    </td>
+                    <td>
+                        <span>1</span>
+                    </td>
+                    <td>
+                        <span>1</span>
+                    </td>
+                    <td>
+                        <span>1</span>
+                    </td>
+                    <td>
+                        <span>1</span>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+
+        <div id="Diachi" class="tabcontent">
+            <button>Thêm địa chỉ</button>
+            <table style="width: 100%; text-align: center;">
+                <tr>
+                    <th>Số nhà, tên đường</th>
+                    <th>Phường / Xã</th>
+                    <th>Quận / Huyện</th>
+                    <th>Tỉnh / Thành phố</th>
+                    <th>Tuỳ chọn</th>
+                </tr>
+                <tr>
+                    <td colspan="4">Chưa có dữ liệu</td>
+                </tr>
+            </table>
+            
+        </div>
+
+        <div id="Thongtin" class="tabcontent">
+            <form action="">
+                <label for="">ID Thành viên<span>*</span></label> <br>
+                <input type="text" id="userID"> <br>
+
+                <label for="">Họ tên<span>*</span></label> <br>
+                <input type="text"> <br>
+
+                <label for="">Email<span>*</span></label> <br>
+                <input type="text"> <br>
+
+                <label for="">Điện thoại<span>*</span></label> <br>
+                <input type="text"> <br>
+
+                <button>Cập nhật</button>
+            </form>
+            </form>
+        </div>
+
+        <div id="Sanpham" class="tabcontent">
+            <span>Chưa có dữ liệu</span>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-iconboxes">
+            <div class="container">
+                <div class="icon">
+                    <i class="fa-solid fa-shirt"></i>
+                    <p>Chất lượng sản phẩm hoàn thiện</p>
+                </div> |
+                <div class="icon">
+                    <i class="fa-solid fa-truck"></i>
+                    <p>Giao hàng nhanh chóng</p>
+                </div> |
+                <div class="icon">
+                    <i class="fa-solid fa-percent"></i>
+                    <p>Chiết khấu giảm giá cao</p>
+                </div> |
+                <div class="icon">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <p>Giá tốt nhất trên thị trường</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-main">
+            <div class="container">
+                <div class="content">
+                    <ul>
+                        <h3>Công Ty TNHH Thương Mại Dịch Vụ Hàng Hoá Định Lê</h3>
+                        <li><i class="fa-solid fa-location-arrow"></i>
+                            <span>Địa chỉ: 336/130 Phan Văn Trị, P11, Q.Bình Thạnh, Tp.Hồ Chí Minh</span>
+                        </li>
+                        <li><i class="fa-solid fa-phone"></i>
+                            <span>Số điện thoại: <a href="">0978568445</a></span>
+                        </li>
+                        <li><i class="fa-solid fa-phone"></i>
+                            <span>Số điện thoại 2: <a href="">0987654321</a></span>
+                        </li>
+                        <li><i class="fa-brands fa-facebook"></i>
+                            <span>Fanpage: <a href="">May mặc Lê Tất Định</a></span>
+                        </li>
+                        <li><i class="fa-solid fa-envelope-open-text"></i>
+                            <span>Email: <a href="">dinhle2701@gmail.com</a></span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <h3>Hỗ trợ khách hàng</h3>
+                        <li><a href="">Đăng ký</a></li>
+                        <li><a href="">Đăng nhập</a></li>
+                        <li><a href="">Tuyển dụng</a></li>
+                        <li><a href="">Liên hệ sỉ lẻ</a></li>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                    </ul>
+                    <ul>
+                        <h3>Chính sách</h3>
+                        <li><a href="">Chính sách bảo hành </a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                        <li><a href="">Chính sách vận chuyển</a></li>
+                        <li><a href="">Chính sách thanh toán</a></li>
+                        <li><a href="">Chính sách đổi trả</a></li>
+                        <li><a href="">Chính sách xử lý khiếu nại</a></li>
+                    </ul>
+                    <ul>
+                        <h3>Hotline hỗ trợ</h3>
+                        <li><i class="fa-solid fa-square-phone-flip"></i>
+                            <span>Hotline 1: <a href="">0987654321</a></span>
+                        </li>
+                        <li><i class="fa-solid fa-square-phone-flip"></i>
+                            <span>Hotline 2: <a href="">0987654321</a></span>
+                        </li>
+                        <h3>Phương thức thanh toán</h3>
+                        <img width="250px" src="/assets/img/payment-methods.jpg" alt="">
+                        <div></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>2021 © Đã đăng ký bản quyền, được cung cấp bởi <span>Lê Tất Định</span></p>
+                <p>Chính sách web phân quyền</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
+</html>

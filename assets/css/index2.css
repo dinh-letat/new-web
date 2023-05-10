@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+header .top-header {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.196);
+}
+
+header .top-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .intro a {
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+}
+
+header .intro a:hover {
+    color: rgb(68, 89, 230);
+    transition: ease-in-out 0.25s;
+}
+
+header .currency {
+    border-left: 1px solid rgba(128, 128, 128, 0.196);
+    padding-left: 20px;
+
+    padding: 10px 0 10px 10px;
+}
+
+header .currency select {
+    outline: none;
+    border: none;
+    padding-left: 20px;
+}
+
+
+
+
+
+
+/* content */
+.content .breadcrumb {
+    font-size: 15px;
+}
+
+.content .breadcrumb ul {
+    display: inline-flex;
+    list-style: none;
+    line-height: 40px;
+}
+
+.content .breadcrumb ul li {
+    margin-right: 10px;
+}
+
+.content .breadcrumb ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content .breadcrumb ul li span {
+    color: rgba(128, 128, 128, 0.522);
+}
+
+
+/* footer */
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10px;
+}
+
+footer .container .icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container .icon i {
+    margin-right: 10px;
+}
+
+footer .footer-iconboxes {
+    background-color: #f7f8fd;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+/* footer-main */
+footer .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 30px;
+}
+
+footer .content ul {
+    width: 20%;
+}
+
+footer .content ul:first-child {
+    width: 40%;
+}
+
+footer .content ul li {
+    list-style: none;
+}
+
+footer .content ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .content ul li a:hover {
+    color: rgb(68, 89, 230);
+    transition: ease-in-out 0.25s;
+}
+
+footer .footer-bottom {
+    border-top: 1px solid rgba(128, 128, 128, 0.309);
+}
+
+footer .footer-bottom span {
+    color: rgb(127, 180, 255);
+}
+
+footer .footer-bottom p {
+    color: #a2a4b7;
+}

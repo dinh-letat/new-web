@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/cart.css">
+    <title>Giỏ hàng</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <div class="intro">
+                    <a href="/index.html">Giới thiệu</a>
+                    <a href="signin.html">Đăng nhập</a>
+                    <a href="signup.html">Đăng ký</a>
+                </div>
+                <div class="currency">
+                    <select name="language" id="">
+                        <option value="Vietnamese">Vietnamese</option>
+                        <option value="English">English</option>
+                    </select>
+                    <select name="currency" id="">
+                        <option value="dollard">Dollard</option>
+                        <option value="vnd">VND</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="user-header">
+                    <div class="logo">
+                        <a href="/index.html"><img src="/assets/img/Twitter-logo.svg.png" width="60px" alt=""></a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Tìm sản phẩm">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="header-button">
+                        <a href="user1.html">
+                            <div>
+                                <i class="fa-solid fa-user" style="color: #aab2c0;"></i>
+                            </div>
+                        </a>
+                        <a href="cart.html">
+                            <div>
+                                <span class="total">0đ</span>
+                            </div>
+                            <div>
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- header-menu -->
+                <div class="header-menu">
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <nav class="breadcrumb">
+                <ul>
+                    <li>
+                        <a href="/index.html">TRANG CHỦ</a>
+                    </li>
+                    <li>></li>
+                    <li><span>GIỎ HÀNG</span></li>
+                </ul>
+            </nav>
+            <section class="content">
+                <div class="cart">
+                    <table>
+                        <tr>
+                            <th>Ảnh</th>
+                            <th>Số lượng</th>
+                            <th>Giá</th>
+                            <th>Tổng</th>
+                            <th>Xoá</th>
+                        </tr>
+                        <tr>
+                            <td>
+                              <img width="100px" src="/assets/img/shoes/g1.jpg" alt="">  
+                            </td>
+                            <td>10</td>
+                            <td> 130.000 đ</td>
+                            <td>1.300.000 đ</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="inform-cart">
+                    <div class="cart-total">
+                        <h3>TỔNG TIỀN</h3>
+                        <table cellspacing="0">
+                            <tr>
+                                <td><b>Tạm tính</b></td>
+                                <td>
+                                    <p class="quntity">0</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Phí vận chuyển</b></td>
+                                <td>
+                                    <p class="subtotal">0</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span>Tổng tiền</span></td>
+                                <td>
+                                    <p class="total">0</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <div>
+                            <button>THANH TOÁN</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-iconboxes">
+            <div class="container">
+                <div class="icon">
+                    <i class="fa-solid fa-shirt"></i>
+                    <p>Chất lượng sản phẩm hoàn thiện</p>
+                </div> |
+                <div class="icon">
+                    <i class="fa-solid fa-truck"></i>
+                    <p>Giao hàng nhanh chóng</p>
+                </div> |
+                <div class="icon">
+                    <i class="fa-solid fa-percent"></i>
+                    <p>Chiết khấu giảm giá cao</p>
+                </div> |
+                <div class="icon">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <p>Giá tốt nhất trên thị trường</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-main">
+            <div class="container">
+                <div class="content">
+                    <ul>
+                        <h3>Thông tin liên hệ</h3>
+                        <li><i class="fa-solid fa-location-arrow"></i>
+                            <span>Địa chỉ: Bình Thạnh, Tp.Hồ Chí Minh</span>
+                        </li>
+                        <li><i class="fa-solid fa-phone"></i>
+                            <span>Số điện thoại: <a href="">0978568445</a></span>
+                        </li>
+                        <li><i class="fa-solid fa-phone"></i>
+                            <span>Số điện thoại 2: <a href="">0987654321</a></span>
+                        </li>
+                        <li><i class="fa-brands fa-facebook"></i>
+                            <span>Fanpage: <a href="">May mặc Lê Tất Định</a></span>
+                        </li>
+                        <li><i class="fa-solid fa-envelope-open-text"></i>
+                            <span>Email: <a href="">dinhle2701@gmail.com</a></span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <h3>Hỗ trợ khách hàng</h3>
+                        <li><a href="">Đăng ký</a></li>
+                        <li><a href="">Đăng nhập</a></li>
+                        <li><a href="">Tuyển dụng</a></li>
+                        <li><a href="">Liên hệ sỉ lẻ</a></li>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                    </ul>
+                    <ul>
+                        <h3>Chính sách</h3>
+                        <li><a href="">Chính sách bảo hành </a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                        <li><a href="">Chính sách vận chuyển</a></li>
+                        <li><a href="">Chính sách thanh toán</a></li>
+                        <li><a href="">Chính sách đổi trả</a></li>
+                        <li><a href="">Chính sách xử lý khiếu nại</a></li>
+                    </ul>
+                    <ul>
+                        <h3>Hotline hỗ trợ</h3>
+                        <li><i class="fa-solid fa-square-phone-flip"></i>
+                            <span>Hotline 1: <a href="">0987654321</a></span>
+                        </li>
+                        <li><i class="fa-solid fa-square-phone-flip"></i>
+                            <span>Hotline 2: <a href="">0987654321</a></span>
+                        </li>
+                        <h3>Phương thức thanh toán</h3>
+                        <img width="250px" src="/assets/img/payment-methods.jpg" alt="">
+                        <div></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>2023 © Đã đăng ký bản quyền, được cung cấp bởi <span>Lê Tất Định</span></p>
+                <p>Chính sách web phân quyền</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/js/addToCart.js"></script>
+</body>
+
+</html>
